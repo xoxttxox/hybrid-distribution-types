@@ -5,7 +5,6 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "test": "exit 0",
     "clean": "rimraf build",
     "tsc": "tsc",
     "build": "npm run clean && npm run tsc",
@@ -19,6 +18,10 @@
   },
   "author": "pascal0397",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xoxttxox/hybrid-distribution-types/issues"
+  },
+  "homepage": "https://github.com/xoxttxox/hybrid-distribution-types#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
