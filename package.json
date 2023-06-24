@@ -1,0 +1,32 @@
+{
+  "name": "hybrid-distribution-types",
+  "version": "1.0.0",
+  "description": "Type interfaces for Hybrid Launcher's distribution specification.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "exit 0",
+    "clean": "rimraf build",
+    "tsc": "tsc",
+    "build": "npm run clean && npm run tsc",
+    "lint": "eslint . --ext .js,.ts",
+    "bl": "npm run build && npm link",
+    "prepack": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xoxttxox/hybrid-distribution-types.git"
+  },
+  "author": "pascal0397",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "rimraf": "^4.4.0",
+    "typescript": "^5.0.2"
+  },
+  "files": [
+    "build"
+  ]
+}
